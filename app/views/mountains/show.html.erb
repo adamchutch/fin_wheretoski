@@ -1,0 +1,37 @@
+<div class="page-header">
+  <h3>Mountain #<%= @mountain.id %></h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>Mountain</dt>
+      <dd><%= @mountain.mountain %></dd>
+
+      <dt>State</dt>
+      <dd><%= @mountain.state %></dd>
+
+      <dt>Terrain difficulty</dt>
+      <dd><%= @mountain.terrain_difficulty %></dd>
+
+      <dt>Ski acreage</dt>
+      <dd><%= @mountain.ski_acreage %></dd>
+
+      <dt>Details</dt>
+      <dd><%= @mountain.details %></dd>
+
+    </dl>
+
+    <div class="btn-group btn-group-justified">
+      <a href="/mountains" class="btn btn-primary">
+        Back
+      </a>
+      <a href="/mountains/<%= @mountain.id %>/edit" class="btn btn-warning">
+        Edit
+      </a>
+      <a href="/delete_mountain/<%= @mountain.id %>" class="btn btn-danger" rel="nofollow">
+        Delete
+      </a>
+    </div>
+  </div>
+</div>
